@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         view.backgroundColor = isLightOn ? .white : .black
     }
     
-    @IBAction func buttonPrsd() {
-        //isLightOn = !isLightOn
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         isLightOn.toggle()
         updateUI()
     }
+    
     
 }
 
